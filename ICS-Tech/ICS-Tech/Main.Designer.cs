@@ -44,6 +44,7 @@
             this.messages.TabIndex = 11;
             this.messages.Text = "Сообщения (+)";
             this.messages.UseVisualStyleBackColor = true;
+            this.messages.Click += new System.EventHandler(this.messages_Click);
             // 
             // textBox1
             // 
@@ -62,6 +63,7 @@
             this.zakazi.TabIndex = 9;
             this.zakazi.Text = "Заказы и обработка заказов (+)";
             this.zakazi.UseVisualStyleBackColor = true;
+            this.zakazi.Click += new System.EventHandler(this.zakazi_Click);
             // 
             // users
             // 
@@ -72,6 +74,7 @@
             this.users.TabIndex = 8;
             this.users.Text = "Пользователи и добавление новых (+)";
             this.users.UseVisualStyleBackColor = true;
+            this.users.Visible = false;
             // 
             // kurs
             // 

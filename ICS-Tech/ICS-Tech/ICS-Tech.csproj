@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ICS_Tech</RootNamespace>
     <AssemblyName>ICS-Tech</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,16 +34,42 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="MySql.Data">
       <HintPath>..\..\..\..\C#\ICS-Tech\ICS-Tech\ICS-Tech\bin\Debug\MySql.Data.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -62,6 +89,12 @@
     </Compile>
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="E-mail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E-mail.Designer.cs">
+      <DependentUpon>E-mail.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -93,11 +126,32 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Messages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messages.Designer.cs">
+      <DependentUpon>Messages.cs</DependentUpon>
+    </Compile>
     <Compile Include="MySqlData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Zakaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zakaz.Designer.cs">
+      <DependentUpon>Zakaz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zakazi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zakazi.Designer.cs">
+      <DependentUpon>Zakazi.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E-mail.resx">
+      <DependentUpon>E-mail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -114,6 +168,9 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Messages.resx">
+      <DependentUpon>Messages.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -123,7 +180,14 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Zakaz.resx">
+      <DependentUpon>Zakaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zakazi.resx">
+      <DependentUpon>Zakazi.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -145,7 +209,38 @@
     <Content Include="Images\Recycle.png" />
     <Content Include="Images\refresh.png" />
     <Content Include="Images\tool.png" />
+    <EmbeddedResource Include="lib\DevExpress.Data.v15.2.dll" />
+    <EmbeddedResource Include="lib\DevExpress.Office.v15.2.Core.dll" />
+    <EmbeddedResource Include="lib\DevExpress.Pdf.v15.2.Core.dll" />
+    <EmbeddedResource Include="lib\DevExpress.Pdf.v15.2.Drawing.dll" />
+    <EmbeddedResource Include="lib\DevExpress.Printing.v15.2.Core.dll" />
+    <EmbeddedResource Include="lib\DevExpress.RichEdit.v15.2.Core.dll" />
+    <EmbeddedResource Include="lib\DevExpress.Sparkline.v15.2.Core.dll" />
+    <EmbeddedResource Include="lib\DevExpress.Utils.v15.2.dll" />
+    <EmbeddedResource Include="lib\DevExpress.XtraBars.v15.2.dll" />
+    <EmbeddedResource Include="lib\DevExpress.XtraEditors.v15.2.dll" />
+    <EmbeddedResource Include="lib\DevExpress.XtraGrid.v15.2.dll" />
+    <EmbeddedResource Include="lib\DevExpress.XtraLayout.v15.2.dll" />
+    <EmbeddedResource Include="lib\DevExpress.XtraPrinting.v15.2.dll" />
+    <EmbeddedResource Include="lib\DevExpress.XtraTreeList.v15.2.dll" />
+    <EmbeddedResource Include="lib\MySql.Data.dll" />
+    <Content Include="Resources\DevExpress.Data.v15.2.dll" />
+    <Content Include="Resources\DevExpress.Office.v15.2.Core.dll" />
+    <Content Include="Resources\DevExpress.Pdf.v15.2.Core.dll" />
+    <Content Include="Resources\DevExpress.Pdf.v15.2.Drawing.dll" />
+    <Content Include="Resources\DevExpress.Printing.v15.2.Core.dll" />
+    <Content Include="Resources\DevExpress.RichEdit.v15.2.Core.dll" />
+    <Content Include="Resources\DevExpress.Sparkline.v15.2.Core.dll" />
+    <Content Include="Resources\DevExpress.Utils.v15.2.dll" />
+    <Content Include="Resources\DevExpress.XtraBars.v15.2.dll" />
+    <Content Include="Resources\DevExpress.XtraEditors.v15.2.dll" />
+    <Content Include="Resources\DevExpress.XtraGrid.v15.2.dll" />
+    <Content Include="Resources\DevExpress.XtraLayout.v15.2.dll" />
+    <Content Include="Resources\DevExpress.XtraPrinting.v15.2.dll" />
+    <Content Include="Resources\DevExpress.XtraTreeList.v15.2.dll" />
+    <Content Include="Resources\MySql.Data.dll" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

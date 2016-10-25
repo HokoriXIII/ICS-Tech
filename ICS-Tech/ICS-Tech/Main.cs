@@ -33,7 +33,7 @@ namespace ICS_Tech
             frm.Owner = this;
             frm.MdiParent = this.MdiParent;
             frm.Show();
-        }
+        }*/
 
         private void zakazi_Click(object sender, EventArgs e)
         {
@@ -43,13 +43,13 @@ namespace ICS_Tech
             frm.MdiParent = this.MdiParent;
             frm.Show();
         }
-
+        
         private void messages_Click(object sender, EventArgs e)
         {
             Messages frm = new Messages(textBox1.Text);
             frm.Owner = this;
             frm.MdiParent = this.MdiParent;
             frm.Show();
-        }*/
+        }
     }
 }
